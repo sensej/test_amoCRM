@@ -1,0 +1,111 @@
+.purpleBall {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(
+    64% 64% at 35.25% 35.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  left: 868px;
+  top: 0;
+  z-index: -1;
+
+  @media (max-width: 700px) {
+    width: 40px;
+    height: 40px;
+    top: 286px;
+    left: 296px;
+  }
+}
+
+.redBall {
+  position: absolute;
+  top: 83px;
+  left: 519px;
+  width: 83px;
+  height: 83px;
+  background: radial-gradient(
+    64% 64% at 35.25% 35.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.smallRedBall {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 547px;
+  left: 851px;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.248) 59.67%,
+    rgba(167, 49, 49, 0.264) 78.59%,
+    rgba(130, 25, 25, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  z-index: -1;
+
+  @media (max-width: 700px) {
+    width: 43px;
+    height: 43px;
+    top: 465px;
+    left: 35px;
+  }
+}
+
+.redLight {
+  position: absolute;
+  top: 251px;
+  left: -102px;
+  width: 311px;
+  height: 311px;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
+
+  @media (max-width: 700px) {
+    width: 211px;
+    height: 211px;
+    top: 291px;
+    left: -50px;
+    opacity: 1;
+  }
+}
+
+.purpleLight {
+  position: absolute;
+  top: -154px;
+  left: 602px;
+  width: 259px;
+  height: 259px;
+  background: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: -1;
+
+  @media (max-width: 700px) {
+    top: 154px;
+    left: 178px;
+    opacity: 0.8;
+    filter: blur(196px);
+  }
+}

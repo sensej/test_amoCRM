@@ -1,0 +1,128 @@
+@import "../../scss/vars";
+
+.footer {
+  margin-top: auto;
+  padding: 55px 0 20px;
+  background-color: $base-background-color;
+
+  @media (max-width: 700px) {
+    padding: 60px 0 60px;
+  }
+}
+
+.footerContent {
+  display: flex;
+  gap: 25px;
+
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin-bottom: 20px;
+
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+}
+
+.desktopListItem {
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+.mobileListItem {
+  display: none;
+
+  @media (max-width: 700px) {
+    display: flex;
+  }
+}
+
+.listItem {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 16px;
+
+  @media (max-width: 700px) {
+    font-size: 14px;
+  }
+
+  a {
+    transition: opacity 0.2s ease-in;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footerMenu {
+  margin: 0 auto 0 98px;
+
+  @media (max-width: 1020px) {
+    margin: 0;
+  }
+}
+
+.footerMenuList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 408px;
+  height: 184px;
+
+  @media (max-width: 700px) {
+    width: 285px;
+    height: 160px;
+    gap: 3px;
+  }
+
+  li {
+    @media (max-width: 700px) {
+      width: 125px;
+    }
+  }
+}
+
+.footerContacts {
+  margin-top: -15px;
+  text-align: right;
+
+  @media (max-width: 1020px) {
+    text-align: left;
+  }
+}
+
+.footerContactsContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerCopy {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: $secondary-font-family;
+  padding-top: 33px;
+
+  @media (max-width: 700px) {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
